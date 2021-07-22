@@ -1,0 +1,97 @@
+/* *{
+    border: 1px solid black;
+} */
+
+/* color palette
+#f7f1f0
+#C3A6A0
+#A15C38
+#262220 */
+
+body {
+    /* background: white; */
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "name pages"
+    ;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.name {
+    grid-area: name;
+    margin: 10px;
+}
+a {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.pages {
+    grid-area: pages;
+    margin: 10px;
+    justify-self: end;
+}
+
+
+/* portfolio Gallery */
+/* main contents */
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-row-gap:80px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "caseImg caseBrief1"
+        "caseBrief2 caseImg2"
+        "caseImg3 caseBrief3"
+        "caseBrief3 caseImg4";
+    
+}
+.caseImg1 .caseImg2 .caseImg3 .caseImg4 {
+    grid-area: caseImg1;
+    grid-area: caseImg2;
+    grid-area: caseImg3;
+    grid-area: caseImg4;
+}
+.caseImg1 .caseImg2 .caseImg3 .caseImg4:hover{
+    transition: box-shadow 0.3s ease 0s, transform 300ms ease 0s;
+    transform-style: preserve-3d;
+    transform: scaleX(1) scaleY(1) scaleZ(1);
+}
+
+.caseBrief1 .caseBrief2 .caseBrief3 .caseBrief4 {
+    grid-area: caseBrief1;
+    grid-area: caseBrief2;
+    grid-area: caseBrief3;
+    grid-area: caseBrief4;
+} 
+
+.caseTitle {
+    font-weight: 700;
+    font-size: large;
+    padding-top: 30%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+}
+.caseDescr {
+    padding-left: 10%;
+}
+.caseRole {
+    color: slategrey;
+    padding-left: 10%;
+}
+
