@@ -1,0 +1,60 @@
+* {
+    border: 1px solid black;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh; 
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-areas: 
+        "header"
+        "case-main"
+        "footer";
+}
+
+header {
+    font-size: 15pt;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "name pages"
+    ;
+    /* padding-top: 15px; */
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+}
+
+.name {
+    grid-area: name;
+    margin: 10px;
+}
+
+.pages {
+    grid-area: pages;
+    margin: 10px;
+    justify-self: end;
+}
+
+footer {
+    grid-area: footer;
+    /* display: flex;
+    flex-direction: column; */
+}
+.btm-nav-link{
+    display: flex;
+    flex-direction: row;
+    line-height: 10px;
+}
+
+/* main content  */
+.case-main {
+    grid-area: case-main;
+}

@@ -18,8 +18,8 @@ body {
 }
 
 header {
+    font-size: 15pt;
     grid-area: header;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -54,7 +54,7 @@ main {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "topHeroContent topHeroContent"
-        "btmContent btmContent";
+        "btmContent btmContent";   
 }
 
 
@@ -99,29 +99,24 @@ a {
 .bkgdblock {
     width:550px;
     height:500px;
-    background: rgb(242,252,237);
-    background: linear-gradient(22deg, rgba(242,252,237,1) 0%, rgba(191,244,255,1) 100%);
-    
     background: linear-gradient(357deg, rgba(236,244,236,1) 0%, rgba(199,227,233,1) 100%); 
     background-position: 141% 0,0 0;
-    
-    background-repeat: no-repeat,repeat;
-    box-shadow: inset 0 0 0 1px #fff;
 }
 
+
 .child {
-    width: 100%;
-    
+    padding-top:100px;
+    padding-left: 50px;
+    width: 500px;
 }
 
 
 /* bottom contnet  */
 
 .btmContent {
-    margin: 50px;
+    padding-left: 100px;
     grid-area: btmContent;
     display: grid;
-    column-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -133,20 +128,45 @@ a {
 
 .card1 .card2 .card3 .card4 {
     grid-area: card1 card2 card3 card4;
-    /* padding-bottom: 15%; */
-    border: white;  
-    padding: 20px;  
+    border: white; 
+   
 } 
+.card-img-top {
+    width: 400px;
+    height: 400px;
+   
+}
+.card1 {
+    width: 80%;
+    margin-bottom: 50px; 
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+
+.card2 {
+    width: 80%;
+    margin-bottom: 50px; 
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+.card3 {
+     width: 80%;
+    margin-bottom: 50px; 
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+.card4 {
+     width: 80%;
+    margin-bottom: 50px; 
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.card-body {
+    background-color: white;
+}
+
 h4 {
     font-weight: 600;
 }
 .card-text {
     line-height: 1.5;
-}
-.bg_block {
-    width: 550px;
-    height: 556px;
-    color: pink;
 }
 
 footer {
@@ -157,3 +177,13 @@ footer {
     flex-direction: row;
     text-decoration: none;
 }
+.chat-fixed {
+    position: fixed;
+    /* width: 10px; */
+}
+
+/* @media all screen and (max-width:414px) {
+    body {
+        background: lightblue;
+    }
+} */

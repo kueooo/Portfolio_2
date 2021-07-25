@@ -1,0 +1,73 @@
+/* *{
+    border: 1px solid black;
+} */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh; 
+    margin-left: 80px;
+    margin-right: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12% 80% 8%;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+header {
+    font-size: 15pt;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "name pages"
+    ;
+    padding-top: 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+}
+
+.name {
+    grid-area: name;
+    margin: 10px;
+}
+
+.pages {
+    grid-area: pages;
+    margin: 10px;
+    justify-self: end;
+}
+/* end of header  */
+
+
+/* main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "skillCard1 skiillCard2 skillCard3 skillCard4"
+        "skllCard2"
+        "skillCard3"
+        "skillCard4"
+    ;
+    row-gap: 100px;
+}
+.skillCard1 .skillCard2 .skillCard3 .skillCard4 {
+    height: 200px;
+    grid-area: skillCard1 skillCard2;
+    border: transparent;
+}
+.card-title .card-text {
+    color: black;
+} */
+
+main {
+    width: 100%;
+}
