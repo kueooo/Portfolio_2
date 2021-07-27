@@ -45,12 +45,12 @@ header {
 
 footer {
     grid-area: footer;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 .btm-nav-link{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     line-height: 10px;
 }
 
